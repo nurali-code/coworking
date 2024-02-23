@@ -39,9 +39,9 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.to("#author", {
     scrollTrigger: {
         trigger: "#authorWrap",
-        start: "80% 80%",
-        end: "100% 80%",
-        // markers: true,
+        start: "60% 80%",
+        end: "90% 80%",
+        markers: true,
         scrub: true
     },
     filter: "blur(0px)"
