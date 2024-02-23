@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Сделка</title>
+	<meta name="theme-color" content="#124BF6">
+	<link rel="icon" type="image/svg" href="./favicon.svg">
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+	<main class="main">
+		<div class="container">
+			<h1>Почему риэлторы массово уходят из агентств недвижимости?</h1>
+			<div class="wrap main-features">
+				<span class="enter">ВХОД БЕСПЛАТНЫЙ</span>
+				<img src="img/dot.svg" alt="dot">
+			</div>
+			<p class="main-tag wrap"><img src="img/clock.svg" alt="clock"> 1 марта 18:00 </p>
+			<p class="main-tag wrap">
+				<img src="img/map.svg" alt="map">
+				Амурская областная научная библиотека им. Н.Н. Муравьёва-Амурского
+			</p>
+			<button class="btn modal_toggle">Записаться</button>
+		</div>
+		<img src="img/main.png" class="main__img" alt="main">
+	</main>
+
+	<section class="automation">
+
+		<div class="container">
+			<h2>
+				Риэлторы редко пользуются автоматизацией... <br>
+				А она решает большинство задач
+			</h2>
+			<ul class="chat">
+				<li>Как автоматизировать рекламу на всех площадках? Фотографии? Тексты? Продвижение?</li>
+				<li>Не хочу делать холодные звонки, но готов заниматься живой работой с клиентами</li>
+				<li>Честно ли, что агентство забирает 50% от прибыли? Есть ли альтернативы?</li>
+				<li>Что за коворкинги и правда ли, что риэлторы в них умирают?</li>
+			</ul>
+		</div>
+
+		<div class="automation-wrapper" id="authorWrap">
+			<div class="section author" id="author">
+				<div class="container wrap">
+					<img loading="lazy" src="img/author.jpg" alt="author">
+					<div class="title">
+						<h3 class="heading">Сахаров Аркадий</h3>
+						<p>Специалист в архитектуре информационных систем</p>
+						<p>Руководитель направления стратегического менеджмента. Pro-tech компании</p>
+						<p>Специалист по управлению IT- проектами и IT-процессами</p>
+						<button class="btn modal_toggle">Зарегистрироваться на мероприятие</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<section class="soft">
+		<div class="container">
+			<h2>Бесплатный софт</h2>
+			<p>
+				Мы договорились с разработчиками IT систем для риэлторов, что вы получите их продукты на первые 3 месяца
+				совершенно бесплатно.
+			</p>
+		</div>
+		<img loading="lazy" src="img/soft.jpg" class="soft__img" alt="soft">
+	</section>
+
+	<section class="perspective">
+		<div class="container">
+			<h2>
+				<span class="big">Новый ракурс</span>
+				на риэлтерскую деятельность
+			</h2>
+			<p>
+				Это будет живой вечер, где мы сможем открыто поговорить об эволюции риэлторства в России, каждый сможет
+				задать свой вопрос и вместе со всеми найти истину, к которой ведет нас будущее.
+				<br>
+				<br>
+				Уверяю вас, с такого ракурса вы еще не смотрели на свою работу.
+			</p>
+			<img loading="lazy" src="img/signature.svg" alt="signature" class="signature">
+		</div>
+	</section>
+
+	<section class="contacts">
+		<div class="contacts-box">
+			<p class="main-tag wrap"><img src="img/clock.svg" alt="clock"> 1 марта 18:00 </p>
+			<p class="main-tag wrap">
+				<img src="img/map.svg" alt="map">
+				Благовещенск, ул. Ленина, 139 (зал «Точка кипения»)
+			</p>
+			<form onsubmit="sendJSON(event)">
+				<label for="fio">ФИО</label>
+				<input type="text" required id="fio">
+				<label for="phone">Ваш телефон</label>
+				<input type="tel" required id="phone" class="phone">
+				<button type="submit" class="btn">Я приду</button>
+			</form>
+		</div>
+		<iframe
+			src="https://yandex.ru/map-widget/v1/?um=constructor%3A477c191611f7db710cf33f694802c4bc0a0378d951a0af4f691a7e6a6d510dff&amp;source=constructor"
+			loading="lazy"></iframe>
+	</section>
+
+	<footer class="footer">
+		<div class="container wrap">
+			<div class="col">
+				<span class="date">1 МАРТА 18:00 </span>
+				<span class="enter">ВХОД БЕСПЛАТНЫЙ</span>
+				<address>
+					Амурская областная научная библиотека
+					им. Н.Н. Муравьёва-Амурского
+				</address>
+			</div>
+			<img loading="lazy" src="img/dot.svg" alt="dit">
+		</div>
+	</footer>
+
+	<div class="modal" id="modal">
+		<div class="modal-content">
+			<button class="modal-close wrap modal_toggle">&times;</button>
+			<form onsubmit="sendJSON(event)">
+				<label for="fio1">ФИО</label>
+				<input type="text" required id="fio1">
+				<label for="phone1">Ваш телефон</label>
+				<input type="tel" required id="phone1" class="phone">
+				<button type="submit" class="btn">Я приду</button>
+			</form>
+			<p class="policy">Нажимая на кнопку, Вы соглашаетесь с условиями <a href="#">политики конфиденциальности</a>
+			</p>
+		</div>
+	</div>
+
+	<script src="./js/gsap.min.js"></script>
+	<script src="./js/ScrollTrigger.min.js"></script>
+	<script src="./js/inputmask.min.js"></script>
+	<script src="./js/script.js"></script>
+
+</body>
+
+</html>
