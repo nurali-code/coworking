@@ -41,7 +41,7 @@ gsap.to("#author", {
         trigger: "#authorWrap",
         start: "60% 80%",
         end: "90% 80%",
-        markers: true,
+        // markers: true,
         scrub: true
     },
     filter: "blur(0px)"
